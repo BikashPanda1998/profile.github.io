@@ -102,8 +102,14 @@
           alert("username  : "+fname.value+" "+input.value+" and email : "+email.value);
         }
         function removeimage() {
-         document.getElementById("profilepic").value=null; 
-        }
+          if (confirm("Press a ok to confirm!")) {
+             document.getElementById("profilepic").value=null; 
+            } 
+            else {
+             console.log("cancel");
+            }
+           }
+
 </script>
 
    
